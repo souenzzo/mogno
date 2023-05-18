@@ -1,0 +1,4 @@
+{:deps   {:aliases [:dev]}
+ :builds {:mogno {:target    :node-test
+                  :output-to "target/classes/mogno.js"
+                  :autorun   true}}}

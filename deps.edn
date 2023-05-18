@@ -1,0 +1,9 @@
+{:paths   ["src"]
+ :deps    {}
+ :aliases {:dev {:extra-paths ["dev" "test"]
+                 :extra-deps  {org.clojure/clojure    {:mvn/version "1.11.1"}
+                               org.clojure/test.check {:mvn/version "1.1.1"}
+                               cloverage/cloverage    {:mvn/version "1.2.4"}
+                               thheller/shadow-cljs   {:mvn/version "2.23.3"}}}}}
+;; clojure -M:dev -m cloverage.coverage -p src -s test --junit
+;; clojure -M:dev -m br.dev.zz.mogno.dev
